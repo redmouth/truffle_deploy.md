@@ -12,3 +12,9 @@ module.exports = function(deployer) {
 };
 ```
 https://ethereum.stackexchange.com/questions/12778/how-to-send-some-amount-to-a-contract-in-truffle
+
+
+#### deploy contract with constructor with parameters [migrations]
+https://github.com/trufflesuite/truffle/issues/43
+1. passing single parameter ```deployer.deploy(MyContract1, 10000000000000000);```
+2. passing array ```deployer.deploy(MyContract2, [1506528000, 10000000000000000, 1507392000, 11000000000000000,...]);```
