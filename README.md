@@ -18,3 +18,7 @@ https://ethereum.stackexchange.com/questions/12778/how-to-send-some-amount-to-a-
 https://github.com/trufflesuite/truffle/issues/43
 1. passing single parameter<br> ```deployer.deploy(MyContract1, 10000000000000000);```
 2. passing array<br> ```deployer.deploy(MyContract2, [1506528000, 10000000000000000, 1507392000, 11000000000000000,...]);```
+
+
+#### a full CrowdSale guide
+https://blog.zeppelin.solutions/how-to-create-token-and-initial-coin-offering-contracts-using-truffle-openzeppelin-1b7a5dae99b6
