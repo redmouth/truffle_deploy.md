@@ -45,3 +45,6 @@ https://blog.zeppelin.solutions/how-to-create-token-and-initial-coin-offering-co
 
 #### MyFunction is not a function
 https://ethereum.stackexchange.com/questions/12547/truffle-test-typeerror-myfunction-is-not-a-function
+
+#### Test contract with Web3
+https://citywebconsultants.co.uk/blog/blockchain/introducing-ethereum-development-part-3-testrpc-and-truffle
