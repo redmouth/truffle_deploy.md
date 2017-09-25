@@ -42,3 +42,6 @@ https://github.com/trufflesuite/truffle/issues/43
 
 #### a full CrowdSale guide
 https://blog.zeppelin.solutions/how-to-create-token-and-initial-coin-offering-contracts-using-truffle-openzeppelin-1b7a5dae99b6
+
+#### MyFunction is not a function
+https://ethereum.stackexchange.com/questions/12547/truffle-test-typeerror-myfunction-is-not-a-function
