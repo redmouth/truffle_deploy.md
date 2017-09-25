@@ -1,5 +1,25 @@
 # truffle_deploy
 
+#### How to choose an account to deploy a contract in truffle
+I figured it out. in truffle.js you can specify from: field like this:
+
+// Allows us to use ES6 in our migrations and tests.
+```
+require('babel-register')
+module.exports = {
+  networks: {
+    development: {
+      host: 'localhost',
+      port: 8545,
+      network_id: '*', // Match any network id
+      from: '0xA21983B35C767CF8609D95F4886C9A18A194D8AA'
+    }
+  }
+}
+```
+https://ethereum.stackexchange.com/questions/17441/how-to-choose-an-account-to-deploy-a-contract-in-truffle
+<br>
+
 #### deploy multiple dependent contracts
 https://ethereum.stackexchange.com/questions/23757/deploy-multiple-contracts-with-dependencies-truffle
 
