@@ -50,6 +50,6 @@ https://ethereum.stackexchange.com/questions/12547/truffle-test-typeerror-myfunc
 https://citywebconsultants.co.uk/blog/blockchain/introducing-ethereum-development-part-3-testrpc-and-truffle
 
 
-#### speedup Avoid compilation when doing tests
+#### speedup: avoid compiling unchanged files when doing tests
 https://github.com/trufflesuite/truffle/issues/343<br>
 https://github.com/troggy/economy/commit/9cc689604e40ad317b9cae3aeaaa7b29538dbbd0#diff-04c6e90faac2675aa89e2176d2eec7d8
