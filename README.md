@@ -72,6 +72,24 @@ $ geth --testnet --datadir $ETHEREUM/testnet --rpc --rpcaddr 127.0.0.1 --rpcport
 ```
 
 ##### set up a private Ethereum testnet blockchain using Geth
+CustomGenesis.json
+```
+{
+    "config": {
+        "chainId": 15,
+        "homesteadBlock": 0,
+        "eip155Block": 0,
+        "eip158Block": 0
+    },
+    "difficulty": "0x1",
+    "gasLimit": "0x2100000",
+    "alloc": {
+        "9f3bdf37f348fb82fdd4cbcffc126c9282ef319a": 
+         { "balance": "0x1337000000000000000000" }     
+    }
+}
+```
+
 ```
 $ geth account new --datadir /path/to/test-net-blockchain
 $ geth removedb — datadir  /path/to/test-net-blockchain
@@ -85,9 +103,15 @@ $ geth --identity "BootstrapNode" --nodiscover --rpc --rpcaddr 127.0.0.1 --rpcpo
 
 $ geth --identity "BootstrapNode" --nodiscover --rpc --rpcaddr 127.0.0.1 --rpcport "8545" --rpccorsdomain "*" --networkid 1999 --port "30303" --rpcapi "db,eth,net,web3" --datadir ~/.ethereum/testnet --nat "any" --unlock '0' --password ~/password.txt console
 
+enable mining
+$ geth --identity "BootstrapNode" --nodiscover --rpc --rpcaddr 127.0.0.1 --rpcport "8545" --rpccorsdomain "*" --networkid 1999 --port "30303" --rpcapi "db,eth,net,web3" --datadir ~/.ethereum/testnet --nat "any" --unlock '0' --password ~/password.txt --mine --minerthreads 2 console
+
 check coinbase account balance
 >web3.fromWei(eth.getBalance(eth.coinbase), "ether")
 https://github.com/ethereum/go-ethereum/wiki/Managing-your-accounts
+
+list all eth accounts
+>eth.accounts
 ```
 https://medium.com/@WWWillems/how-to-set-up-a-private-ethereum-testnet-blockchain-using-geth-and-homebrew-1106a27e8e1e
 
