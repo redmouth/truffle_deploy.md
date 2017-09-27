@@ -76,6 +76,14 @@ $ geth --testnet --datadir $ETHEREUM/testnet --rpc --rpcaddr 127.0.0.1 --rpcport
 $ geth account new --datadir /path/to/test-net-blockchain
 $ geth removedb — datadir  /path/to/test-net-blockchain
 $ geth --identity "BootstrapNode" --nodiscover --rpc --rpcaddr 127.0.0.1 --rpcport "8545" --rpccorsdomain "*" --networkid 1999 --port "30303" --ipcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --rpcapi "db,eth,net,web3" --autodag --datadir /path/to/test-net-blockchain --nat "any"  init /path/to/CustomGenesis.json console
+
+example
+$ cd ~/.ethereum/testnet
+$ geth account new --datadir ~/.ethereum/testnet
+$ geth account list --datadir ~/.ethereum/testnet
+$ geth --identity "BootstrapNode" --nodiscover --rpc --rpcaddr 127.0.0.1 --rpcport "8545" --rpccorsdomain "*" --networkid 1999 --port "30303" --rpcapi "db,eth,net,web3" --datadir ~/.ethereum/testnet --nat "any"  init ~/.ethereum/testnet/CustomGenesis.json console
+
+$ geth --identity "BootstrapNode" --nodiscover --rpc --rpcaddr 127.0.0.1 --rpcport "8545" --rpccorsdomain "*" --networkid 1999 --port "30303" --rpcapi "db,eth,net,web3" --datadir ~/.ethereum/testnet --nat "any" --unlock '0, 1' --password 
 ```
 https://medium.com/@WWWillems/how-to-set-up-a-private-ethereum-testnet-blockchain-using-geth-and-homebrew-1106a27e8e1e
 
