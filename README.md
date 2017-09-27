@@ -69,5 +69,16 @@ $ geth --rpc --rpcaddr "127.0.0.1" --rpcport "8545" --unlock addr --password
 
 
 $ geth --testnet --datadir $ETHEREUM/testnet --rpc --rpcaddr 127.0.0.1 --rpcport 8545 --unlock '0, 1' --password '$ETHEREUM/files/p.txt'
-
 ```
+
+##### set up a private Ethereum testnet blockchain using Geth
+```
+$ geth account new --datadir /path/to/test-net-blockchain
+$ geth removedb — datadir  /path/to/test-net-blockchain
+$ geth --identity "BootstrapNode" --nodiscover --rpc --rpcaddr 127.0.0.1 --rpcport "8545" --rpccorsdomain "*" --networkid 1999 --port "30303" --ipcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --rpcapi "db,eth,net,web3" --autodag --datadir /path/to/test-net-blockchain --nat "any"  init /path/to/CustomGenesis.json console
+```
+https://medium.com/@WWWillems/how-to-set-up-a-private-ethereum-testnet-blockchain-using-geth-and-homebrew-1106a27e8e1e
+
+geth --identity "BootstrapNode" --genesis CustomGenesis.json --rpc --rpcaddr 127.0.0.1 --rpcport "8545" --rpccorsdomain "*" --datadir ./ --port "30303" --nodiscover --ipcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --rpcapi "db,eth,net,web3" --autodag --networkid "*" --nat "any" console
+
+https://souptacular.gitbooks.io/ethereum-tutorials-and-tips-by-hudson/content/private-chain.html
