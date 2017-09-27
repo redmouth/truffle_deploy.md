@@ -66,4 +66,8 @@ $ geth account new
 $ geth account list
 $ geth --unlock $ADDR --password $passfilel
 $ geth --rpc --rpcaddr "127.0.0.1" --rpcport "8545" --unlock addr --password
+
+
+$ geth --testnet --datadir $ETHEREUM/testnet --rpc --rpcaddr 127.0.0.1 --rpcport 8545 --unlock '0, 1' --password '$ETHEREUM/files/p.txt'
+
 ```
