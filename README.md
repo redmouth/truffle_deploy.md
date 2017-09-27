@@ -118,3 +118,21 @@ https://medium.com/@WWWillems/how-to-set-up-a-private-ethereum-testnet-blockchai
 geth --identity "BootstrapNode" --genesis CustomGenesis.json --rpc --rpcaddr 127.0.0.1 --rpcport "8545" --rpccorsdomain "*" --datadir ./ --port "30303" --nodiscover --ipcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --rpcapi "db,eth,net,web3" --autodag --networkid "*" --nat "any" console
 
 https://souptacular.gitbooks.io/ethereum-tutorials-and-tips-by-hudson/content/private-chain.html
+
+
+# Rinkeby testnet
+```
+$ wget https://www.rinkeby.io/rinkeby.json
+
+$ geth --datadir=$HOME/.rinkeby init rinkeby.json 
+
+$ geth account new --datadir ~/.rinkeby/
+
+$ ln -s ~/.rinkeby/geth.ipc ~/.ethereum/
+
+$ geth --networkid=4 --datadir=$HOME/.rinkeby --cache=512 --ethstats='yournode:Respect my authoritah!@stats.rinkeby.io'   --bootnodes=enode://a24ac7c5484ef4ed0c5eb2d36620ba4e4aa13b8c84684e1b4aab0cebea2ae45cb4d375b77eab56516d34bfbd3c1a833fc51296ff084b770b94fb9028c4d25ccf@52.169.42.101:30303 --rpc --rpcapi="personal,eth,network"
+
+attach to the node process
+$ geth attach
+```
+https://gist.github.com/redmouth/17c1c551e4aa7deeaf6441faa316e8cc
