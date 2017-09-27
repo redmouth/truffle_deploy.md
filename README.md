@@ -1,5 +1,6 @@
 # truffle_deploy
 
+# Development
 #### How to choose an account to deploy a contract in truffle
 I figured it out. in truffle.js you can specify from: field like this:
 
@@ -53,3 +54,11 @@ https://citywebconsultants.co.uk/blog/blockchain/introducing-ethereum-developmen
 #### speedup: avoid compiling unchanged files when doing tests
 https://github.com/trufflesuite/truffle/issues/343<br>
 https://github.com/troggy/economy/commit/9cc689604e40ad317b9cae3aeaaa7b29538dbbd0#diff-04c6e90faac2675aa89e2176d2eec7d8
+
+
+# Deploy
+##### test on geth
+```
+$ geth account new
+$ geth --rpc --rpcaddr "127.0.0.1" --rpcport "8545"
+```
