@@ -83,7 +83,11 @@ $ geth account new --datadir ~/.ethereum/testnet
 $ geth account list --datadir ~/.ethereum/testnet
 $ geth --identity "BootstrapNode" --nodiscover --rpc --rpcaddr 127.0.0.1 --rpcport "8545" --rpccorsdomain "*" --networkid 1999 --port "30303" --rpcapi "db,eth,net,web3" --datadir ~/.ethereum/testnet --nat "any"  init ~/.ethereum/testnet/CustomGenesis.json console
 
-$ geth --identity "BootstrapNode" --nodiscover --rpc --rpcaddr 127.0.0.1 --rpcport "8545" --rpccorsdomain "*" --networkid 1999 --port "30303" --rpcapi "db,eth,net,web3" --datadir ~/.ethereum/testnet --nat "any" --unlock '0, 1' --password 
+$ geth --identity "BootstrapNode" --nodiscover --rpc --rpcaddr 127.0.0.1 --rpcport "8545" --rpccorsdomain "*" --networkid 1999 --port "30303" --rpcapi "db,eth,net,web3" --datadir ~/.ethereum/testnet --nat "any" --unlock '0' --password ~/password.txt console
+
+check coinbase account balance
+>web3.fromWei(eth.getBalance(eth.coinbase), "ether")
+https://github.com/ethereum/go-ethereum/wiki/Managing-your-accounts
 ```
 https://medium.com/@WWWillems/how-to-set-up-a-private-ethereum-testnet-blockchain-using-geth-and-homebrew-1106a27e8e1e
 
