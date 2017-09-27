@@ -1,6 +1,9 @@
 # truffle_deploy
 
 # Development
+#### start TestRpc
+```$ testrpc --secure -u 0 -u 1 -u 2 --gasPrice 20000```
+
 #### How to choose an account to deploy a contract in truffle
 I figured it out. in truffle.js you can specify from: field like this:
 
