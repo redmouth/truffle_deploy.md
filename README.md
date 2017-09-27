@@ -63,5 +63,7 @@ https://github.com/troggy/economy/commit/9cc689604e40ad317b9cae3aeaaa7b29538dbbd
 ##### test on geth
 ```
 $ geth account new
-$ geth --rpc --rpcaddr "127.0.0.1" --rpcport "8545"
+$ geth account list
+$ geth --unlock $ADDR --password $passfilel
+$ geth --rpc --rpcaddr "127.0.0.1" --rpcport "8545" --unlock addr --password
 ```
