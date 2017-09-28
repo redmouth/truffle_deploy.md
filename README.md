@@ -170,3 +170,7 @@ contract College depends on contract Department, so
 1. you have to deploy contract Department first, copy the address of Department
 2. then when deploying contract College, paste the copied address of deployed Department to the provided CONSTRUCTOR PARAMETERS.
 https://ethereum.stackexchange.com/questions/12372/how-to-deploy-multiple-contracts-which-are-dependent-in-ethereum-wallet
+
+<br><br>
+# gasPrice, gasLimit
+https://ethereum.stackexchange.com/questions/25842/truffle-gas-price-and-gas-limit-on-demand-instead-of-using-fixed-amount
