@@ -119,7 +119,7 @@ geth --identity "BootstrapNode" --genesis CustomGenesis.json --rpc --rpcaddr 127
 
 https://souptacular.gitbooks.io/ethereum-tutorials-and-tips-by-hudson/content/private-chain.html
 
-
+<br><br>
 # Rinkeby testnet
 ```
 $ wget https://www.rinkeby.io/rinkeby.json
@@ -166,5 +166,5 @@ contract College {
     }
 }
 ```
-contract College depends on contract Department, so you have to deploy contract College first, then when deploy contract College, pass the address of deployed College to the input frame.
+contract College depends on contract Department, so you have to deploy contract Department first, then when deploy contract College, pass the address of deployed Department to the input frame.
 https://ethereum.stackexchange.com/questions/12372/how-to-deploy-multiple-contracts-which-are-dependent-in-ethereum-wallet
