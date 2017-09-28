@@ -58,7 +58,7 @@ https://citywebconsultants.co.uk/blog/blockchain/introducing-ethereum-developmen
 https://github.com/trufflesuite/truffle/issues/343<br>
 https://github.com/troggy/economy/commit/9cc689604e40ad317b9cae3aeaaa7b29538dbbd0#diff-04c6e90faac2675aa89e2176d2eec7d8
 
-
+<br><br>
 # Deploy
 ##### test on geth
 ```
