@@ -191,4 +191,14 @@ https://rinkeby.etherscan.io/
 
 <br><br>
 # How to participate in crowdsale
+Wallets compatible with Ethereum tokens (ERC-20 standard):
+```
+MyEtherWallet (no download needed)
+MetaMask (Firefox and Chrome browser addon)
+Mist (Desktop)
+Parity (Desktop)
+Parity + Ledger (Hardware wallet)
+imToken (iPhone)
+imToken (Android)
+```
 https://tokenmarket.net/what-is/how-to-participate-ethereum-token-crowdsale/
