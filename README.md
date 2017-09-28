@@ -135,6 +135,11 @@ $ geth --networkid=4 --datadir=$HOME/.rinkeby --cache=512 --ethstats='yournode:R
 attach to the node process
 $ geth attach
 ```
+Successful Deploy
+```
+
+$ geth --rinkeby --rpc --rpcaddr "127.0.0.1" --rpcport "8545" --rpccorsdomain "*" --rpcapi "db,eth,net,web3,personal" --unlock "0,1" --password $passfile --datadir ~/.ethereum/rinkeby
+```
 https://gist.github.com/redmouth/17c1c551e4aa7deeaf6441faa316e8cc
 
 
@@ -179,3 +184,7 @@ https://ethereum.stackexchange.com/questions/25842/truffle-gas-price-and-gas-lim
 <br><br>
 # Remove Contract
 https://ethereum.stackexchange.com/questions/3794/how-to-remove-the-dao-contract-from-ethereum-wallet-mist-watch-list-as-it-is-f
+
+<br><br>
+# Watch, monitor
+https://rinkeby.etherscan.io/
