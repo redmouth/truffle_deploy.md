@@ -206,4 +206,8 @@ https://tokenmarket.net/what-is/how-to-participate-ethereum-token-crowdsale/
 
 <br><br>
 # truffle guide, how to buy token after crowdsale is deployed in console
+using truffle console to interact with node, deployed contracts...
+$ truffle console
+>
+
 https://blog.zeppelin.solutions/how-to-create-token-and-initial-coin-offering-contracts-using-truffle-openzeppelin-1b7a5dae99b6
