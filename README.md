@@ -136,3 +136,35 @@ attach to the node process
 $ geth attach
 ```
 https://gist.github.com/redmouth/17c1c551e4aa7deeaf6441faa316e8cc
+
+
+<br><br>
+# Deploy multiple contract
+```
+contract Department {
+
+    function enroll(uint depID, address student) returns (bool ret) {
+           return true;
+    }
+}
+
+contract College {
+    address student;
+    Department dept_instance;
+
+    function College ( address _student , address _department  ) {
+        student = _student;
+        dept_instance = Department(_department);
+     }
+
+    function chooseDept ( uint id ) payable returns (bool value) {
+        bool ret = student.send(msg.value);
+        if (!ret)
+            return dept_instance.enroll(id, msg.sender);
+        else
+            throw;
+    }
+}
+```
+contract College depends on contract Department, so you have to deploy contract College first, then when deploy contract College, pass the address of deployed College to the input frame.
+https://ethereum.stackexchange.com/questions/12372/how-to-deploy-multiple-contracts-which-are-dependent-in-ethereum-wallet
