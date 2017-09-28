@@ -174,3 +174,8 @@ https://ethereum.stackexchange.com/questions/12372/how-to-deploy-multiple-contra
 <br><br>
 # gasPrice, gasLimit
 https://ethereum.stackexchange.com/questions/25842/truffle-gas-price-and-gas-limit-on-demand-instead-of-using-fixed-amount
+
+
+<br><br>
+# Remove Contract
+https://ethereum.stackexchange.com/questions/3794/how-to-remove-the-dao-contract-from-ethereum-wallet-mist-watch-list-as-it-is-f
