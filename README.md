@@ -188,3 +188,7 @@ https://ethereum.stackexchange.com/questions/3794/how-to-remove-the-dao-contract
 <br><br>
 # Watch, monitor
 https://rinkeby.etherscan.io/
+
+<br><br>
+# How to participate in crowdsale
+https://tokenmarket.net/what-is/how-to-participate-ethereum-token-crowdsale/
